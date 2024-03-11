@@ -93,4 +93,15 @@ public class Event {
         System.out.println("The event was successfully created!");
         System.out.println(this.toString());
     }
+
+    public void put(String eventID2, Event event) {
+        throw new UnsupportedOperationException("Unimplemented method 'put'");
+    }
+    public boolean containsKey(String id) {
+        throw new UnsupportedOperationException("Unimplemented method 'containsKey'");
+    }
+    public Event get(String id) {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'get'");
+    }
 }
