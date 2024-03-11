@@ -17,7 +17,6 @@ public class Main {
                     System.out.println("3. Quit");
                     String option = scanner.nextLine();
 
-                    
                     switch (option) {
                         case "1":
                             System.out.println("Please enter your eventID:");
