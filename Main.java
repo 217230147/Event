@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             Map<String, Event> events = new HashMap<>();
+            new ArrayList<>();
 
                 while (true) {
                     System.out.println("Please select an action:");
