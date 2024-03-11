@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             Map<String, Event> events = new HashMap<>();
-            new ArrayList<>();
+            List<Event> eventList = new ArrayList<>();
 
                 while (true) {
                     System.out.println("Please select an action:");
@@ -27,8 +28,9 @@ public class Main {
                             String eventVenue = scanner.nextLine();
                             System.out.println("Please enter the eventDate(format :yyyy-MM-dd):");
                             Date eventDate = java.sql.Date.valueOf(scanner.nextLine());
-                            Event event = new Event(eventID, eventName, eventVenue, eventDate);
-                            events.put(eventID, event);
+                            Event newEvent = new Event(eventID, eventName, eventVenue, eventDate);
+                            events.put(eventID, newEvent);
+                            eventList.add(newEvent);
                             System.out.println("The event was successfully created!");
                             break;
                          case "2":
